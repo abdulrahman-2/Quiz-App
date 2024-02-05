@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma, Arial;
+}
+.quize-container {
+  width: 900px;
+  margin: 50px auto;
+  background-color: #eee;
+  padding: 1rem;
+}
+.row-1,
+.row-4,
+.row-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+}
+.question {
+  background-color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.row-2 h2 {
+  margin-bottom: 1rem;
+}
+.row-2 .answers {
+  background-color: #f6f6f6;
+  font-weight: bold;
+}
+.row-2 .answers div {
+  padding: 1rem;
+}
+.row-2 .answers div:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.row-2 .answers div input {
+  margin-right: 5px;
+}
+.row-2 .answers div input,
+.row-2 .answers div label {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.row-2 .answers div input:checked + label {
+  color: dodgerblue;
+}
+.row-3 {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+.row-3 button {
+  padding: 0.5rem;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.row-3 {
+  margin: 1rem 0;
+}
+.row-3 button {
+  padding: 1rem;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.row-4 .progres-bullets span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+.row-4 .progres-bullets span.active {
+  background-color: dodgerblue;
+  border: none;
+}
+.row-5 {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  background-color: white;
+}
+.row-5 span {
+  font-weight: bold;
+}
+.row-5 .Bad {
+  color: red;
+}
+.row-5 .Great {
+  color: blue;
+}
+.row-5 .Perfect {
+  color: green;
+}
